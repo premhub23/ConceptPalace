@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+.gallery{
+   display: inline-block;
+	border: black;
+	margin: 5px;
+	width: 200px;
+}
+
+.gallery .description{
+	padding: 10px;
+	text-align: center
+}
+
+.gallery:hover{
+	border: 1px solid red;
+}
+
+.gallery img{
+	width: 100%;
+	height: auto;
+}
+
+img:target{
+	border: solid red;
+	
+}
+
+.lightbox{
+	display: none;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 1em;
+}
+
+.lightbox:target{
+	display: block;
+	align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.lightbox span{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
